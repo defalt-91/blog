@@ -72,3 +72,5 @@ class UserpostlistvieW(ListView):
     def get_queryset(self):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
         return post.objects.filter(author=user).order_by("-date_posted")
+def VueViews(request):
+    return render(request,'blog/Vue.html')
