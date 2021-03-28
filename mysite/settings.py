@@ -134,3 +134,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 STATIC_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+SECURE_SSL_REDIRECT = True
