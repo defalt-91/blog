@@ -9,6 +9,11 @@ django-crispy-forms = "*"
 pillow = "*"
 whitenoise = "*"
 gunicorn = "*"
+django-rest-framework = "*"
+django-rest-auth = {extras = ["with_social"], version = "*"}
+django-allauth = "*"
+coreapi = "*"
+pyyaml = "*"
 
 [dev-packages]
 

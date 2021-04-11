@@ -7,6 +7,10 @@ from django.views.generic import (ListView,
                                   DeleteView)
 from blog.models import post
 from django.contrib.auth.models import User
+from rest_framework import generics
+from .serializers import PostSerializer
+from rest_framework import permissions
+from rest_framework import viewsets
 
 
 def about(request):
@@ -55,7 +59,6 @@ class DeletevieW(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     model = post
     success_url = '/'
 
-
     def test_func(self):
         post = self.get_object()
         if self.request.user == post.author:
@@ -72,5 +75,13 @@ class UserpostlistvieW(ListView):
     def get_queryset(self):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
         return post.objects.filter(author=user).order_by("-date_posted")
+
+
 def VueViews(request):
-    return render(request,'blog/Vue.html')
+    return render(request, 'blog/Vue.html')
+
+
+class PostViewset(viewsets.ModelViewSet):
+    queryset = post.objects.all()
+    permission_classes = [permissions.AllowAny]
+    serializer_class = PostSerializer
