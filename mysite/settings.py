@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'r@3ddl*pp9ckfaa!&8*osyiy3t4@tb_w%)&r@=p0q!__@0qxtd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 # Application definition
@@ -139,11 +139,11 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = (
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-STATIC_DIRS = [os.path.join(BASE_DIR, 'static'),os.path.join('static')]
+STATIC_DIRS = [os.path.join(BASE_DIR, 'static'), os.path.join('static')]
 
 STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = True
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.IsAuthenticated',
@@ -157,4 +157,4 @@ REST_FRAMEWORK = {
 SITE_ID = 1
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
