@@ -5,7 +5,7 @@ from .models import Choices, Survey
 class SurveySerializer(serializers.ModelSerializer):
     class Meta:
         model = Survey
-        fields = ['question','id']
+        fields = ['question', 'id']
 
 
 class ChoicesSerializer(serializers.ModelSerializer):

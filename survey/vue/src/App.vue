@@ -1,13 +1,9 @@
 <template>
-    <div class="container-fluid m-1">
-        <div class="row justify-content-around my-3">
-            <div class="d-grid d-flex gap-2 col-6">
+        <div class="row">
                 <LoadSurveys @getSurveys="getSurveys"/>
                 <NewSurvey @addsurvey='getSurveys' />
-            </div>
         </div>
         <Survey :surveys="surveys" @deleteCompleted="getSurveys" />
-    </div>
 </template>
 <script>
 import LoadSurveys from './components/LoadSurveys'
