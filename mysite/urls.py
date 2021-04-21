@@ -5,6 +5,8 @@ from django.contrib.auth import views as auth_views
 from django.conf import settings
 import Accounts.views as Accounts_views
 from django.contrib.auth.views import PasswordResetDoneView, PasswordResetConfirmView
+from survey.views import SurveyViewset, ChoiceViewset
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
@@ -18,10 +20,11 @@ urlpatterns = [
          name='password_reset_done'),
     path('reset/<uidb64>/<token>/', PasswordResetConfirmView.as_view(),
          name='password_reset_confirm'),
+    path('api/v2/',include('survey.urls'))
 
 
 
 ]
 if settings.DEBUG:
-    urlpatterns += static(settings.MEDIA_URL,
-                          document_root=settings.MEDIA_ROOT)
+     urlpatterns += static(settings.MEDIA_URL,
+                           document_root=settings.MEDIA_ROOT)

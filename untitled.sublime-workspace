@@ -1,0 +1,426 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"def",
+				"defs"
+			],
+			[
+				"on",
+				"on_delete="
+			],
+			[
+				"choice",
+				"choices="
+			],
+			[
+				"Model",
+				"ModelForm"
+			],
+			[
+				"forei",
+				"ForeignObject"
+			],
+			[
+				"ma",
+				"max_length="
+			],
+			[
+				"M",
+				"Model_full"
+			],
+			[
+				"c",
+				"contrib"
+			],
+			[
+				"e",
+				"EMAIL_BACKEND"
+			],
+			[
+				"ema",
+				"EMAIL_BACKEND"
+			],
+			[
+				"rou",
+				"router"
+			],
+			[
+				"name",
+				"basename="
+			],
+			[
+				"re",
+				"register"
+			],
+			[
+				"rest",
+				"rest_framework"
+			],
+			[
+				"view",
+				"viewsets"
+			],
+			[
+				"lis",
+				"ListCreateAPIView"
+			],
+			[
+				"model",
+				"ModelViewSet"
+			],
+			[
+				"p",
+				"proto"
+			],
+			[
+				"mo",
+				"Model"
+			],
+			[
+				"l",
+				"line"
+			],
+			[
+				"inte",
+				"IntegerField"
+			],
+			[
+				"h1",
+				"h1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Anaconda Python Builder",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"ui",
+				"UI: Select Theme"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"theme",
+				"UI: Customize Theme"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 203.0,
+		"history":
+		[
+			"import os",
+			"pip",
+			"version",
+			"python",
+			"python3 --version",
+			"python --version",
+			"python -v",
+			"sys.executable",
+			"sys.executable()",
+			"import sys",
+			"os.executable()",
+			"os.executable",
+			"import os"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/defalt91/projects/Develops/mysite",
+		"/home/defalt91/projects/Develops/mysite/survey"
+	],
+	"file_history":
+	[
+		"/home/defalt91/projects/Develops/mysite/survey/serializers.py",
+		"/home/defalt91/projects/Develops/mysite/untitled.sublime-project",
+		"/home/defalt91/projects/Develops/mysite/survey/models.py",
+		"/home/defalt91/projects/Develops/mysite/survey/migrations/0001_initial.py",
+		"/home/defalt91/projects/Develops/mysite/survey/admin.py",
+		"/home/defalt91/projects/Develops/mysite/survey/templates/survey/index.html",
+		"/home/defalt91/projects/Develops/mysite/survey/vue/vue.config.js",
+		"/home/defalt91/projects/Develops/mysite/survey/vue/.env.production",
+		"/home/defalt91/projects/Develops/mysite/mysite/settings.py",
+		"/home/defalt91/projects/Develops/mysite/survey/vue/.env.staging",
+		"/home/defalt91/projects/Develops/mysite/survey/vue/babel.config.js",
+		"/home/defalt91/projects/Develops/mysite/survey/templates/survey/indesx.html",
+		"/home/defalt91/.ssr/settings.conf",
+		"/home/defalt91/.ssr/input-profiles/aaa.conf",
+		"/home/defalt91/.vuerc",
+		"/home/defalt91/projects/Develops/mysite/survey/vue/package.json",
+		"/home/defalt91/projects/Develops/mysite/survey/vue/public/index.html",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/package.json",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/webpack.config.js",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/.babelrc",
+		"/home/defalt91/projects/Develops/mysite/blog/templates/blog/base.html",
+		"/home/defalt91/projects/Develops/mysite/blog/templates/blog/index.html",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/vueblog/babel.config.js",
+		"/home/defalt91/projects/Develops/mysite/blog/vueblog/vue.config.js",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/vueblog/package.json",
+		"/home/defalt91/.config/sublime-text/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/defalt91/projects/Training/blogApiVue/blog/Pipfile",
+		"/home/defalt91/projects/Develops/mysite/Pipfile",
+		"/home/defalt91/projects/Develops/mysite/Pipfile.lock",
+		"/home/defalt91/projects/Develops/mysite/.directory",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/templates/blog/base.html",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/templates/blog/index.html",
+		"/home/defalt91/projects/Training/blogApiVue/blog/mysite/settings.py",
+		"/home/defalt91/projects/Develops/mysite/Procfile",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/vueblog/.env.production",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/vueblog/vue.config.js",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/vueblog/.env.staging",
+		"/home/defalt91/projects/Develops/mysite/blog/static/blog/main.css",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/static/css/app.fb322333.css",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/views.py",
+		"/home/defalt91/projects/Packages/django-polls/setup.cfg",
+		"/home/defalt91/projects/Packages/django-polls/setup.py",
+		"/home/defalt91/projects/Packages/django-polls/MANIFEST.in",
+		"/home/defalt91/projects/Packages/django-polls/README.rst",
+		"/home/defalt91/projects/Training/blogApiVue/blog/mysite/urls.py",
+		"/home/defalt91/projects/angular-django-registration-auth-master/app/scripts/app.js",
+		"/home/defalt91/projects/angular-django-registration-auth-master/app/scripts/services/djangoAuth.js",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/django/contrib/auth/urls.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/Accounts/forms.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/rest_auth/serializers.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/urls.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/rest_auth/urls.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/rest_auth/views.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/allauth/account/urls.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/rest_framework/routers.py",
+		"/home/defalt91/projects/Develops/news/newspaper_project/settings.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/rest_auth/registration/views.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/.venv/lib/python3.9/site-packages/rest_auth/registration/urls.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/serializers.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/models.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/blog/apps.py",
+		"/home/defalt91/projects/Develops/Django for api/blogapi/posts/models.py",
+		"/home/defalt91/projects/Develops/Django for api/blogapi/posts/apps.py",
+		"/home/defalt91/projects/Develops/Django for api/blogapi/posts/urls.py",
+		"/home/defalt91/projects/Develops/Django for api/blogapi/posts/views.py",
+		"/home/defalt91/projects/Develops/Django for api/blogapi/posts/templates/posts/listview.html",
+		"/home/defalt91/projects/Develops/Django for api/blogapi/posts/permissions.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/Accounts/apps.py",
+		"/home/defalt91/projects/Training/blogApiVue/blog/mysite/wsgi.py",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/leads/admin.py",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/templates/frontend/index.html",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/src/components/app.js",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/static/frontend/main.js.LICENSE.txt",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/static/frontend/main.js",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/src/index.js",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/views.py",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/urls.py",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/django_react/urls.py",
+		"/home/defalt91/.config/sublime-text/Packages/User/Anaconda.sublime-settings",
+		"/home/defalt91/.config/sublime-text/Packages/Anaconda/Anaconda.sublime-settings",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/django_react/settings.py",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/template/frontend/index.html",
+		"/home/defalt91/projects/Training/DjangoReactAPI/django-react/frontend/models.py",
+		"/home/defalt91/Downloads/SublimeLicense"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"staticfiles",
+			"billing",
+			"js",
+			"blog",
+			"include",
+			"app"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 74.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 156.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Anaconda Python Builder",
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

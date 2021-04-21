@@ -14,6 +14,7 @@ django-rest-auth = {extras = ["with_social"], version = "*"}
 django-allauth = "*"
 coreapi = "*"
 pyyaml = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
