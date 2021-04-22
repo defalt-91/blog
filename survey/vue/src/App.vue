@@ -32,7 +32,7 @@ export default {
     methods: {
         getSurveys() {
             axios
-                .get('http://127.0.0.1:8000/api/v2/survey')
+                .get('https://arman-blog.herokuapp.com/api/v2/survey')
                 .then(res => { this.surveys = res.data });
         }
     }

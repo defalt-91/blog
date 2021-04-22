@@ -23,7 +23,7 @@ export default {
     },
     methods: {
         deleteSurvey(id) {
-            axios.delete(`https://arman-blog.herokuapp.com:8000/api/v2/survey/${id}/`)
+            axios.delete(`https://arman-blog.herokuapp.com/api/v2/survey/${id}/`)
             this.$emit("deleteCompleted")
         }
     },

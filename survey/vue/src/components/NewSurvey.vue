@@ -36,7 +36,7 @@ export default {
         Newsurvey() {
             axios({
                 method: 'POST',
-                url: 'https://arman-blog.herokuapp.com:8000/api/v2/survey/',
+                url: 'https://arman-blog.herokuapp.com/api/v2/survey/',
                 data: {
                     question: 'asdasd',
                 }
