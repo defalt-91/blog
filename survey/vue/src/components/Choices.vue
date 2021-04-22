@@ -23,7 +23,7 @@ export default {
     },
     methods: {
         async getChoices() {
-            const res = await fetch('http://localhost:8000/api/v2/choice/')
+            const res = await fetch('https://arman-blog.herokuapp.com:8000/api/v2/choice/')
             const data = await res.json()
             this.choices = data
 
