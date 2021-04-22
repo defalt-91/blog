@@ -162,8 +162,6 @@ SITE_ID = 1
 
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 CORS_ORIGIN_WHITELIST = (
-    'https://localhost:8000',
     'http://localhost:8000',
-    'https://localhost:8080',
     'http://localhost:8080',
 )

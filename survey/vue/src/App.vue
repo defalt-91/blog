@@ -4,18 +4,21 @@
                 <NewSurvey @addsurvey='getSurveys' />
         </div>
         <Survey :surveys="surveys" @deleteCompleted="getSurveys" />
+        <Choices />
 </template>
 <script>
 import LoadSurveys from './components/LoadSurveys'
 import axios from 'axios';
 import Survey from './components/Survey';
 import NewSurvey from './components/NewSurvey';
+import Choices from './components/Choices';
 export default {
     name: 'App',
     components: {
         Survey,
         NewSurvey,
         LoadSurveys,
+        Choices,
     },
 
     data() {
