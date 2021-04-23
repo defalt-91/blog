@@ -2,7 +2,7 @@
     <div v-for="item in surveys" :key="item.id" class="col-12 mb-1" id="survey">
         <div class="row">
             <div class="col-11">
-                <h5 class="m-1">{{item.question}}</h5>
+                <p class="m-1">{{item.question}}</p><br/>
             </div>
             <div class="col-1 btn btn-sm" @click="deleteSurvey(item.id)">
                 <i style="color:#ffb330" class="fas fa-backspace"></i>
