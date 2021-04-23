@@ -1,13 +1,6 @@
 <template>
-    <div class="alert"> <button class="btn btn-block btn-info" @click="getChoices">
-            Choices
-        </button>
-        <legend class="border spinner-border my-2">{{choices.length}} Peoples have been answer to this question and <small class="alert alert-primary">{{yeses.length}}</small> said i was and <small class="alert alert-primary">{{nos.length}}</small> said that they're not </legend>
-    </div>
-    <div class="btn btn-sm m-1">Yes  
-        <button class="d-inline-flex m-1 p-2 alert-danger">{{ yeses.length}}</button>
-    </div>
-        <button class="btn btn-sm m-1">{{ nos.length}}</button>
+    <button class="btn btn-sm m-1 d-inline">Yes {{ yeses.length}}</button>
+    <button class="btn btn-sm d-inline">Yes  {{ nos.length}}</button>
 </template>
 <script>
 export default {
@@ -30,15 +23,10 @@ export default {
             return data
         },
         yesFunc() {
-            this.yeses = this.choices.filter((x) => {
-                x.choicefield === 'yes'
-                console.log(x.choicefield)
-            })
+            this.yeses = this.choices.filter((x) => { x.choicefield === 'yes' })
         },
         noFunc() {
-            this.nos = this.choices.filter((x) => {
-                x.choicefield == !'yes'
-            })
+            this.nos = this.choices.filter((x) => { x.choicefield == !'yes' })
         }
     },
     created() {

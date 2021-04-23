@@ -1,24 +1,23 @@
 <template>
-        <div class="row">
-                <LoadSurveys @getSurveys="getSurveys"/>
-                <NewSurvey @addsurvey='getSurveys' />
-        </div>
+    <div class="row">
+        <LoadSurveys @getSurveys="getSurveys" />
+        <NewSurvey @addsurvey='getSurveys' />
+    </div>
+    <div id="survey" class="p-1">
         <Survey :surveys="surveys" @deleteCompleted="getSurveys" />
-        <Choices />
+    </div>
 </template>
 <script>
 import LoadSurveys from './components/LoadSurveys'
 import axios from 'axios';
 import Survey from './components/Survey';
 import NewSurvey from './components/NewSurvey';
-import Choices from './components/Choices';
 export default {
     name: 'App',
     components: {
         Survey,
         NewSurvey,
         LoadSurveys,
-        Choices,
     },
 
     data() {
@@ -39,4 +38,5 @@ export default {
 };
 </script>
 <style lang="css" scoped>
+
 </style>
