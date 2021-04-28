@@ -1,6 +1,6 @@
 <template>
     <button class="btn btn-sm m-1 d-inline">Yes {{ yeses.length}}</button>
-    <button class="btn btn-sm d-inline">Yes  {{ nos.length}}</button>
+    <button class="btn btn-sm d-inline">No  {{ nos.length}}</button>
 </template>
 <script>
 export default {
@@ -33,7 +33,8 @@ export default {
         this.getChoices()
         this.yesFunc()
         this.noFunc()
-    }
+    },
+    
 }
 </script>
 <style lang="css" scoped>

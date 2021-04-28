@@ -125,9 +125,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 LOGIN_REDIRECT_URL = 'blog-home'
 
@@ -142,9 +139,13 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = (
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 STATIC_DIRS = [BASE_DIR / 'static']
 
 STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_URL = '/static/'
 
 # SECURE_SSL_REDIRECT = True
 REST_FRAMEWORK = {

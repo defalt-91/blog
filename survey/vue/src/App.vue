@@ -1,6 +1,6 @@
 <template>
     <div class="row">
-        <LoadSurveys @getSurveys="getSurveys" />
+        <LoadSurveys @getsurveys="getSurveys" />
         <NewSurvey @addsurvey='getSurveys' />
     </div>
     <div id="survey" class="p-1">
@@ -34,6 +34,9 @@ export default {
                 .get('https://arman-blog.herokuapp.com/api/v2/survey')
                 .then(res => { this.surveys = res.data });
         }
+    },
+    emits(){
+        this.getsurveys,this.addsurvey
     }
 };
 </script>

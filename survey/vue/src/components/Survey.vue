@@ -49,4 +49,5 @@ export default {
 #survey {
     border-left: 6px solid lightblue;
 }
+
 </style>
