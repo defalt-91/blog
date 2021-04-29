@@ -85,3 +85,5 @@ class PostViewset(viewsets.ModelViewSet):
     queryset = post.objects.all()
     permission_classes = [permissions.AllowAny]
     serializer_class = PostSerializer
+def VueView(request):
+    return render(request,'survey/VueView.html')

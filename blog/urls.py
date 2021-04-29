@@ -7,12 +7,13 @@ from .views import (PostlistvieW,
                     UpdatevieW, DeletevieW,
                     UserpostlistvieW,
                     VueViews,
-                    PostViewset)
+                    PostViewset,VueView)
 from rest_framework.schemas import get_schema_view
 schema_view = get_schema_view(title='Blog API')
 
 urlpatterns = [
     path('', PostlistvieW.as_view(), name='blog-home'),
+    path('vueapi/',views.VueView,name='Vuex'),
     path('about/', views.about, name='blog-about'),
     path('post/<int:pk>/', DetailvieW.as_view(), name='post-detail'),
     path('post/new/', CreatevieW.as_view(), name='post-new'),

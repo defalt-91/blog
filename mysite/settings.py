@@ -122,6 +122,13 @@ USE_L10N = True
 
 USE_TZ = True
 
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+STATIC_DIRS = [BASE_DIR / 'static']
+
+STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
+STATIC_URL = '/static/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -139,13 +146,6 @@ CRISPY_ALLOWED_TEMPLATE_PACKS = (
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-STATIC_DIRS = [BASE_DIR / 'static']
-
-STATIC_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-STATIC_URL = '/static/'
 
 # SECURE_SSL_REDIRECT = True
 REST_FRAMEWORK = {
@@ -164,4 +164,4 @@ CORS_ORIGIN_WHITELIST = (
     'http://localhost:8000',
     'http://localhost:8080',
     'https://arman-blog.herokuapp.com:8000',
-    '*')
+    'https://arman-blog.herokuapp.com:8080')
