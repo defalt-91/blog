@@ -2,15 +2,15 @@
       <div class="col-12 mx-auto btn-group-sm my-2 border-bottom border-end border-start border-4 border-info pt-2 pb-2">
         <div class="row mx-auto">
           <button
-            class="col-12 btn btn-outline-info text-dark shadow-dark border-end border-5" @click="fastAnim">
+            class="col-sm-4 btn btn-outline-info text-dark shadow-dark border-end border-5" @click="fastAnim">
             <strong class="badge border-1 border border-light bg-info text-wrap fs-5">Slower
             </strong>
           </button>
           <button
-            class="col-12 btn btn-outline-info text-dark shadow border-end border-5 border-start border-5" type="button" @click="$emit('stopAnime')">
+            class="col-sm-4 btn btn-outline-info text-dark shadow border-end border-5 border-start border-5" type="button" @click="$emit('stopAnime')">
             <strong class="border-1 border border-light badge bg-info text-wrap fs-5">Play | Pause</strong>
           </button>
-          <button class="col-12 btn btn-outline-info text-dark shadow border-start border-5" @click="slowAnim">
+          <button class="col-sm-4 btn btn-outline-info text-dark shadow border-start border-5" @click="slowAnim">
             <strong class="border-1 border border-light badge bg-info text-wrap fs-5">Faster
             </strong>
           </button>
