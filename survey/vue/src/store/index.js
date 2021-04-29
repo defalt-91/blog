@@ -5,8 +5,8 @@ export default createStore({
     surveys: [],
     address: "https://arman-blog.herokuapp.com/api/v2/survey/",
     surveyText: "",
-    animsec:1,
-
+    animsec: 1,
+    speed: 50,
   },
   getters: {
     survaysList: (state) => {
@@ -15,9 +15,10 @@ export default createStore({
     ADDsurveyText: (state) => {
       return state.surveyText;
     },
-    animsec:(state) => {
-      return state.animsec
-}
+    animsec: (state) => {
+      return state.animsec;
+    },
+    Speedy: (state) => state.speed,
   },
   mutations: {
     ADD_SURVEYS(state, apiData) {
@@ -25,6 +26,17 @@ export default createStore({
     },
     updateMessage(state, value) {
       state.surveyText = value;
+    },
+    SPEED_CHANGE(state, value) {
+      if (value <= 95 && this.state.speed < 100) {
+          this.state.speed += value
+          console.log(this.state.speed)
+      } else {
+        if (this.state.speed>=5){
+        this.state.speed -= 5;
+
+        }console.log(this.state.speed)
+      }
     },
   },
   actions: {
@@ -37,15 +49,19 @@ export default createStore({
         console.log(e);
       }
     },
-    addSurvey: async function({commit},data){
+    addSurvey: async function ({ commit }, data) {
       try {
-        const response = await axios.post(this.state.address,{
-          question:data
-        }).then(this.dispatch('getApisurvays'))
-      }catch(error){
-        console.log(error)
+        const response = await axios.post(this.state.address, {
+          question: data,
+        });
+      } catch (error) {
+        console.log(error);
       }
-},
-    addAPISurvey: function () {},
+      this.dispatch("getApisurvays");
+    },
+    addAPISurvey: () => {},
+    SpeedChange({ commit },value) {
+      this.commit("SPEED_CHANGE", value);
+    },
   },
 });
