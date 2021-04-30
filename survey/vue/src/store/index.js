@@ -5,7 +5,7 @@ export default createStore({
     surveys: [],
     address: "https://arman-blog.herokuapp.com/api/v2/survey/",
     surveyText: "",
-    animsec: 1,
+    animsec: 5,
     speed: 50,
   },
   getters: {
@@ -19,6 +19,9 @@ export default createStore({
       return state.animsec;
     },
     Speedy: (state) => state.speed,
+    Address: (state) => {
+      return state.address;
+    },
   },
   mutations: {
     ADD_SURVEYS(state, apiData) {
@@ -28,14 +31,12 @@ export default createStore({
       state.surveyText = value;
     },
     SPEED_CHANGE(state, value) {
-      if (value <= 95 && this.state.speed < 100) {
-          this.state.speed += value
-          console.log(this.state.speed)
+      if (state.speed < 100) {
+        state.speed += value;
       } else {
-        if (this.state.speed>=5){
-        this.state.speed -= 5;
-
-        }console.log(this.state.speed)
+        if (value < 0 && state.speed >= 5) {
+          state.speed -= 5;
+        }
       }
     },
   },
@@ -60,7 +61,7 @@ export default createStore({
       this.dispatch("getApisurvays");
     },
     addAPISurvey: () => {},
-    SpeedChange({ commit },value) {
+    SpeedChange({ commit }, value) {
       this.commit("SPEED_CHANGE", value);
     },
   },

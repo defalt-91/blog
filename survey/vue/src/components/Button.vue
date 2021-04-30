@@ -1,21 +1,41 @@
 <template>
-      <div class="col-12 mx-auto btn-group-sm my-2 border-bottom border-end border-start border-4 border-info pt-2 pb-2">
-        <div class="row mx-auto">
-          <button
-            class="col-sm-4 btn btn-outline-info text-dark shadow-dark border-end border-5" @click="fastAnim">
-            <strong class="badge border-1 border border-light bg-info text-wrap fs-5">Slower
-            </strong>
-          </button>
-          <button
-            class="col-sm-4 btn btn-outline-info text-dark shadow border-end border-5 border-start border-5" type="button" @click="$emit('stopAnime')">
-            <strong class="border-1 border border-light badge bg-info text-wrap fs-5">Play | Pause</strong>
-          </button>
-          <button class="col-sm-4 btn btn-outline-info text-dark shadow border-start border-5" @click="slowAnim">
-            <strong class="border-1 border border-light badge bg-info text-wrap fs-5">Faster
-            </strong>
-          </button>
-        </div>
-      </div>
+  <div
+    class="col-sm-10 mx-auto btn-group-sm my-2 border-bottom border-end border-start border-4 border-info pt-2 pb-2"
+  >
+    <div class="row mx-auto">
+      <button
+          style="max-width: 33%"
+        class="rounded-pill col-sm-4 btn btn-outline-info text-dark shadow-dark border-end border-5"
+        @click="fastAnim"
+      >
+        <strong
+          class="rounded-pill badge border-1 border border-light bg-info text-wrap fs-5"
+          >Slower
+        </strong>
+      </button>
+      <button
+        class="col-sm-4 rounded-pill btn btn-outline-info text-dark shadow border-end border-5 border-start border-5"
+        type="button"
+        @click="$emit('stopAnime')"
+        style="max-width: 33%"
+      >
+        <strong
+          class="border-1 rounded-pill border border-light badge bg-info text-wrap fs-5"
+          >Play | Pause</strong
+        >
+      </button>
+      <button
+        class="rounded-pill col-sm-4 btn btn-outline-info text-dark shadow border-start border-5"
+        @click="slowAnim"
+        style="max-width: 33%"
+      >
+        <strong
+          class="border-1 border border-light badge rounded-pill bg-info text-wrap fs-5"
+          >Faster
+        </strong>
+      </button>
+    </div>
+  </div>
 
   <div class="col-12 btn-group d-block pt-5">
     <button
@@ -89,11 +109,6 @@
 import { mapActions } from "vuex";
 export default {
   name: "Button",
-  data() {
-    return {
-      Text: "sssssadsd",
-    };
-  },
   emits: ["stopAnime"],
   computed: {
     AddsurveyText: {
@@ -106,22 +121,23 @@ export default {
     },
   },
   methods: {
-    ...mapActions(["getApisurvays", "addSurvey","SpeedChange"]),
+    ...mapActions(["getApisurvays", "addSurvey", "SpeedChange"]),
     konsole() {
       this.addSurvey(this.AddsurveyText);
       this.AddsurveyText = "";
     },
     slowAnim() {
-      if (this.$store.state.animsec >= 0.8) {
-        this.$store.state.animsec -= 0.4;
+      if (this.$store.state.animsec > 0.5) {
+        this.$store.state.animsec -= 0.5;
+        this.SpeedChange(5);
+        console.log(this.$store.state.speed)
       }
-      console.log(this.$store.state.animsec);
-      this.SpeedChange(5)
     },
     fastAnim() {
-      this.$store.state.animsec += 1;
-      this.SpeedChange(-5)
-      console.log(this.$store.state.animsec);
+      if (this.$store.state.animsec <= 9.5) {
+        this.$store.state.animsec += 0.5;
+        this.SpeedChange(-5);console.log(this.$store.state.speed)
+      }
     },
   },
 };
